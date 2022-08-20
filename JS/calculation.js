@@ -26,8 +26,8 @@ document.getElementById('btn-save').addEventListener('click', function(){
     const savingsAmountField = fieldValue('savings-amount')
     const savingsRate = fieldValue('percentage')
     const savingsAmount = savingsAmountField*(savingsRate/100)
-    if(isNaN(savingsRate)){
-        alert('Please enter a valid rate!!')
+    if(isNaN(savingsRate) || isNaN(savingsAmountField)){
+        alert('Please enter a valid data!!')
         return 
     }
     else{
